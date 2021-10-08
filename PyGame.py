@@ -20,7 +20,7 @@ for x in range(3):
             H = (height/3)-2*margin
             pygame.draw.rect(screen,colour["white"],pygame.Rect(X,Y,W,H))
             font_render = font.render(example[str(l[i])],True,colour["black"])
-            screen.blit(font.render(example[str(l[i])],True,colour["black"]),(X+W/2*0.8,Y+H/2*0.7))
+            screen.blit(font_render,(X+W/2*0.8,Y+H/2*0.7))
             i = i + 1
             pygame.display.update()
 while True:
